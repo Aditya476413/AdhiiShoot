@@ -1,0 +1,266 @@
+.portfolio-section {
+  background-color: var(--black);
+  position: relative;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 28px;
+}
+
+.portfolio-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--black-card);
+  border: 1px solid var(--white-border);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  aspect-ratio: 16 / 10;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--red-border);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(229, 9, 20, 0.25);
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.portfolio-card:hover .portfolio-img {
+  transform: scale(1.08);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.4) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  transition: all var(--transition-normal);
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  background: linear-gradient(to top, rgba(10, 10, 10, 0.98) 0%, rgba(10, 10, 10, 0.6) 60%, rgba(229, 9, 20, 0.15) 100%);
+}
+
+.portfolio-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 58px;
+  height: 58px;
+  background: rgba(229, 9, 20, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.6);
+  opacity: 0;
+  transition: all var(--transition-normal);
+}
+
+.portfolio-card:hover .portfolio-play-btn {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.portfolio-meta-top {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio-duration {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  background: rgba(10, 10, 10, 0.8);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--white);
+}
+
+.portfolio-ratio {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--white-subtle);
+  background: rgba(10, 10, 10, 0.7);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.portfolio-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.portfolio-tag {
+  font-size: 0.72rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white-muted);
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+}
+
+/* Portfolio Modal Styles */
+.modal-content {
+  background: var(--black-surface);
+  border: 1px solid var(--white-border);
+  border-radius: var(--radius-xl);
+  max-width: 840px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(229, 9, 20, 0.2);
+  animation: scaleUp 0.25s ease-out;
+  position: relative;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  background: rgba(10, 10, 10, 0.8);
+  border: 1px solid var(--white-border);
+  border-radius: 50%;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: var(--transition-fast);
+}
+
+.modal-close-btn:hover {
+  background: var(--red);
+  border-color: var(--red);
+}
+
+.modal-video-viewport {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  overflow: hidden;
+}
+
+.modal-video-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.simulated-player-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.player-play-btn {
+  background: var(--red);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.player-time {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--white);
+}
+
+.modal-details {
+  padding: 28px;
+}
+
+.modal-header-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.modal-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.modal-gear-tag {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--red);
+  background: var(--red-soft);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--red-border);
+}
+
+.modal-desc {
+  font-size: 0.95rem;
+  color: var(--white-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--white-border);
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  .modal-actions {
+    flex-direction: column;
+    gap: 14px;
+    align-items: stretch;
+  }
+}

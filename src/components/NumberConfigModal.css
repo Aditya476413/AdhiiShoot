@@ -1,0 +1,45 @@
+.config-modal-box {
+  background: var(--black-surface);
+  border: 1px solid var(--red-border);
+  border-radius: var(--radius-xl);
+  max-width: 500px;
+  width: 100%;
+  padding: 32px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(229, 9, 20, 0.3);
+  animation: scaleUp 0.25s ease-out;
+}
+
+.config-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.config-modal-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.config-note {
+  font-size: 0.88rem;
+  color: var(--white-muted);
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+.config-input-group {
+  margin-bottom: 24px;
+}
+
+.config-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}

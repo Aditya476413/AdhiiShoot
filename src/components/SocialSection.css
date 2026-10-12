@@ -1,0 +1,102 @@
+.social-section {
+  background-color: var(--black);
+  position: relative;
+  text-align: center;
+}
+
+.social-cta-box {
+  background: radial-gradient(circle at 50% 50%, rgba(229, 9, 20, 0.1), transparent 70%), var(--black-card);
+  border: 1px solid var(--white-border);
+  border-radius: var(--radius-xl);
+  padding: 50px 30px;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-cta-title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.social-cta-desc {
+  font-size: 1.05rem;
+  color: var(--white-muted);
+  max-width: 580px;
+  margin: 0 auto 36px auto;
+}
+
+.social-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-channel-card {
+  background: var(--black-surface);
+  border: 1px solid var(--white-border);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.social-channel-card:hover {
+  border-color: var(--red);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(229, 9, 20, 0.25);
+}
+
+.social-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--white-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  transition: all var(--transition-fast);
+}
+
+.social-channel-card:hover .social-icon-box {
+  background: var(--red);
+  border-color: var(--red);
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
+}
+
+.social-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.social-handle {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--white-subtle);
+}
+
+.social-follow-pill {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--red);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media (max-width: 768px) {
+  .social-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
