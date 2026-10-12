@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Video, Menu, X, MessageCircle, Sliders } from 'lucide-react';
+import { Menu, X, MessageCircle, Sliders } from 'lucide-react';
 import { BRAND_CONFIG } from '../config';
 import './Navbar.css';
 
@@ -29,16 +29,11 @@ export const Navbar = ({ onOpenConfig, onBookClick, whatsappNumber }) => {
       <div className="container nav-container">
         {/* Brand Logo */}
         <a href="#home" className="nav-logo" onClick={(e) => handleNavClick(e, 'home')}>
-          <div className="logo-badge">
-            <Video size={20} color="#E50914" />
-            <span className="rec-dot" style={{ position: 'absolute', top: '6px', right: '6px', width: '6px', height: '6px' }}></span>
-          </div>
-          <div className="logo-text-group">
-            <span className="logo-title">
-              ADHIISHOOT<span>.</span>
-            </span>
-            <span className="logo-tagline">CINEMA • REELS</span>
-          </div>
+          <img 
+            src="/assets/images/logo.png" 
+            alt="Adhiishoot Logo" 
+            className="nav-logo-img" 
+          />
         </a>
 
         {/* Desktop Navigation Links */}

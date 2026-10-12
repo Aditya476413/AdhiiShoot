@@ -22,11 +22,14 @@
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--white);
-  letter-spacing: -0.02em;
+}
+
+.footer-logo-img {
+  height: 38px;
+  max-height: 38px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .footer-tagline-quote {

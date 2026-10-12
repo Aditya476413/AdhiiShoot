@@ -28,55 +28,22 @@
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
   cursor: pointer;
   text-decoration: none;
 }
 
-.logo-badge {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
+.nav-logo-img {
   height: 40px;
-  background: var(--black-surface);
-  border: 1px solid var(--white-border);
-  border-radius: var(--radius-md);
-  position: relative;
-  transition: all var(--transition-fast);
+  max-height: 40px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform var(--transition-fast), filter var(--transition-fast);
 }
 
-.nav-logo:hover .logo-badge {
-  border-color: var(--red);
-  box-shadow: 0 0 15px rgba(229, 9, 20, 0.4);
-}
-
-.logo-text-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo-title {
-  font-size: 1.45rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  color: var(--white);
-  line-height: 1.1;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.logo-title span {
-  color: var(--red);
-}
-
-.logo-tagline {
-  font-size: 0.68rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--white-subtle);
-  font-family: var(--font-mono);
+.nav-logo:hover .nav-logo-img {
+  transform: scale(1.04);
+  filter: drop-shadow(0 0 10px rgba(229, 9, 20, 0.45));
 }
 
 /* Nav Links */

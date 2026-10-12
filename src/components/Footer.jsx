@@ -1,5 +1,5 @@
 import React from 'react';
-import { Video, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import { InstagramIcon, FacebookIcon, YoutubeIcon } from './Icons';
 import { BRAND_CONFIG } from '../config';
 import './Footer.css';
@@ -16,8 +16,11 @@ export const Footer = () => {
           {/* Brand Info */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <Video size={24} color="#E50914" />
-              <span>ADHIISHOOT<span className="text-red">.</span></span>
+              <img 
+                src="/assets/images/logo.png" 
+                alt="Adhiishoot Logo" 
+                className="footer-logo-img" 
+              />
             </div>
 
             <div className="footer-tagline-quote">

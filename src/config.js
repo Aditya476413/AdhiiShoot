@@ -1,6 +1,7 @@
 // Brand & Business Configuration for Adhiishoot
 export const BRAND_CONFIG = {
   brandName: "Adhiishoot",
+  logoUrl: "/assets/images/logo.png",
   tagline: "Your Moments. Our Creativity.",
   subTagline: "Professional video shooting, editing, and creative reel services.",
   
