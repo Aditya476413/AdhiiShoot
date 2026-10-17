@@ -18,7 +18,7 @@ export const BRAND_CONFIG = {
   },
 
   // Contact info
-  email: "contact@adhiishoot.com",
+  email: "Itharajuaditya@gmail.com",
   location: "Hyderabad, Telangana • Pan-India Remote Editing",
   hours: "Mon – Sun: 9:00 AM – 9:00 PM IST",
 

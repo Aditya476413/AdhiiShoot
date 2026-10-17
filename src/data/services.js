@@ -50,7 +50,7 @@ export const SERVICES = [
     price: 1499,
     formattedPrice: "₹1,499",
     description: "Heartwarming documentation of your Gruhapravesam pooja, new home walkthrough, family blessings, and celebratory memories.",
-    image: "/assets/images/birthday.jpg",
+    image: "/assets/images/house_warming.jpg",
     badge: "Family Favorite",
     requiresEventDetails: true,
     features: [
@@ -140,7 +140,7 @@ export const SERVICES = [
     price: 999,
     formattedPrice: "₹999",
     description: "On-location shoot with professional creator direction followed by viral-paced editing, color grade, and sound effects.",
-    image: "/assets/images/shoot_and_reel_edit.jpg",
+    image: "/assets/images/shoot_and_edit.jpg",
     badge: "Creator Choice",
     requiresEventDetails: true,
     features: [
@@ -158,7 +158,7 @@ export const SERVICES = [
     price: 499,
     formattedPrice: "₹499",
     description: "Send us your raw footage; we cut it with speed ramps, seamless transitions, beat matching, and aesthetic color grading.",
-    image: "/assets/images/reel_edit.jpg",
+    image: "/assets/images/shoot_and_reel_edit.jpg",
     badge: "Express Edit",
     requiresEventDetails: false,
     features: [
@@ -176,7 +176,7 @@ export const SERVICES = [
     price: 699,
     formattedPrice: "₹699",
     description: "Next-gen AI enhanced reels featuring smart dynamic captions, viral auto-zooms, AI voice accents, sound enhancements, and visual effects.",
-    image: "/assets/images/reel_edit.jpg",
+    image: "/assets/images/shoot_and_reel_edit.jpg",
     badge: "AI Powered 🔥",
     requiresEventDetails: false,
     features: [
@@ -206,21 +206,21 @@ export const SERVICES = [
     ]
   },
   {
-    id: "shop-shoot-and-edit",
-    title: "Shop Shoot and Edit",
+    id: "website-creation",
+    title: "Website Creation",
     category: "Business Promotions",
-    price: 999,
-    formattedPrice: "₹999",
-    description: "Complete on-premise video production for retail outlets, cafes, restaurants, boutiques, and salons to drive customer footfall.",
-    image: "/assets/images/shop_shoot.jpg",
+    price: 3999,
+    formattedPrice: "₹3,999",
+    description: "Create a professional website for your brand to showcase your brand and business.",
+    image: "/assets/images/website.jpg",
     badge: "High ROI",
-    requiresEventDetails: true,
+    requiresEventDetails: false,
     features: [
-      "On-location videographer visit",
-      "Product showcase & ambient B-roll",
-      "Store walkthrough & customer vibe",
-      "Full promotional reel ready to run",
-      "Social media distribution advice"
+      "One-Page Website",
+      "Responsive Design",
+      "Custom Content",
+      "Social Media Integration",
+      "24/7 Availability"
     ]
   }
 ];
