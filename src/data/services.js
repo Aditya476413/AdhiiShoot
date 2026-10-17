@@ -104,7 +104,7 @@ export const SERVICES = [
     price: 999,
     formattedPrice: "₹999",
     description: "Animated motion graphic video invitation customized with your theme, venue details, photos, and catchy background score.",
-    image: "/assets/images/hero_camera.jpg",
+    image: "/assets/images/birthday_invitation.jpg",
     badge: "Digital Invite",
     requiresEventDetails: false,
     features: [
@@ -122,7 +122,7 @@ export const SERVICES = [
     price: 399,
     formattedPrice: "₹399",
     description: "Royal digital wedding e-card / motion invite designed with exquisite typography, auspicious motifs, and event itinerary.",
-    image: "/assets/images/wedding.jpg",
+    image: "/assets/images/wedding_invitation.jpg",
     badge: "Budget Friendly",
     requiresEventDetails: false,
     features: [
@@ -140,7 +140,7 @@ export const SERVICES = [
     price: 999,
     formattedPrice: "₹999",
     description: "On-location shoot with professional creator direction followed by viral-paced editing, color grade, and sound effects.",
-    image: "/assets/images/editing_studio.jpg",
+    image: "/assets/images/shoot-and_reel_edit.jpg",
     badge: "Creator Choice",
     requiresEventDetails: true,
     features: [
@@ -158,7 +158,7 @@ export const SERVICES = [
     price: 499,
     formattedPrice: "₹499",
     description: "Send us your raw footage; we cut it with speed ramps, seamless transitions, beat matching, and aesthetic color grading.",
-    image: "/assets/images/editing_studio.jpg",
+    image: "/assets/images/reel_edit.jpg",
     badge: "Express Edit",
     requiresEventDetails: false,
     features: [
@@ -176,7 +176,7 @@ export const SERVICES = [
     price: 699,
     formattedPrice: "₹699",
     description: "Next-gen AI enhanced reels featuring smart dynamic captions, viral auto-zooms, AI voice accents, sound enhancements, and visual effects.",
-    image: "/assets/images/editing_studio.jpg",
+    image: "/assets/images/reel_edit.jpg",
     badge: "AI Powered 🔥",
     requiresEventDetails: false,
     features: [
