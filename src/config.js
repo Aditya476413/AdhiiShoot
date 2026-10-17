@@ -13,7 +13,7 @@ export const BRAND_CONFIG = {
   // Official Social Media Channels (As specified in PRD Section 12)
   socialLinks: {
     instagram: "https://instagram.com/adhiishoot",
-    facebook: "https://facebook.com/adhiishoot",
+    facebook: "https://www.facebook.com/share/199NeJRzHV/",
     youtube: "https://youtube.com/@adhii_shoot?si=qaTOaFi-bo8TCLGn"
   },
 
