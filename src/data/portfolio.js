@@ -7,9 +7,9 @@ export const PORTFOLIO_ITEMS = [
     thumbnail: "/assets/images/car_delivery.jpg",
     duration: "00:45",
     aspectRatio: "9:16 Vertical Reel",
-    gear: "Sony FX3 • 24-70mm GM II • Ronin RS3",
+    gear: "Shot on iPhone 15 Pro Max • ProRes 4K • DJI Mobile Gimbal",
     description: "Dramatic showroom reveal with deep black floor reflections, ruby red ribbon unveiling, and bass-heavy engine rev transitions.",
-    tags: ["Car Delivery", "Cinematic 4K", "Color Graded"]
+    tags: ["Shot on iPhone", "Car Delivery", "ProRes 4K"]
   },
   {
     id: "port-2",
@@ -19,9 +19,9 @@ export const PORTFOLIO_ITEMS = [
     thumbnail: "/assets/images/bike_delivery.jpg?v=2",
     duration: "00:38",
     aspectRatio: "9:16 Vertical Reel",
-    gear: "Sony A7SIII • 35mm f/1.4 GM • S-Log3",
+    gear: "Shot on iPhone 15 Pro • 4K 60FPS • Action Mode",
     description: "High adrenaline rollout video featuring aggressive speed ramps, cold engine startup audio, and night street b-roll.",
-    tags: ["Superbike", "Speed Ramps", "Sound Design"]
+    tags: ["Shot on iPhone", "Superbike", "Speed Ramps"]
   },
   {
     id: "port-3",
@@ -31,9 +31,9 @@ export const PORTFOLIO_ITEMS = [
     thumbnail: "/assets/images/wedding.jpg",
     duration: "01:15",
     aspectRatio: "16:9 Cinematic Scope",
-    gear: "Sony FX6 • Cine Anamorphic 50mm",
+    gear: "Shot on iPhone 15 Pro Max • Cinematic Mode 4K HDR",
     description: "An emotional, film-grade wedding highlight reel with cold sparkler entrance, candid vows, and rich cinematic tones.",
-    tags: ["Wedding", "Cold Sparklers", "Emotional"]
+    tags: ["Shot on iPhone", "Wedding", "Cinematic Mode"]
   },
   {
     id: "port-4",
@@ -55,9 +55,9 @@ export const PORTFOLIO_ITEMS = [
     thumbnail: "/assets/images/shop_shoot.jpg",
     duration: "00:52",
     aspectRatio: "9:16 Vertical Reel",
-    gear: "Sony FX3 • 50mm T1.5 Cine • Aputure 300d",
+    gear: "Shot on iPhone 15 Pro • 4K ProRes Log • Studio Lighting",
     description: "Boutique cafe commercial highlighting the brewing process, espresso extraction, cozy lighting, and customer experience.",
-    tags: ["Store Promo", "Commercial", "B-Roll"]
+    tags: ["Shot on iPhone", "Store Promo", "Commercial"]
   },
   {
     id: "port-6",
@@ -67,8 +67,8 @@ export const PORTFOLIO_ITEMS = [
     thumbnail: "/assets/images/birthday.jpg",
     duration: "00:40",
     aspectRatio: "9:16 Vertical Reel",
-    gear: "Sony FX3 • 24-70mm GM • On-Camera RGB LED",
+    gear: "Shot on iPhone 15 Pro Max • 4K 60FPS • Mobile RGB LED",
     description: "Electric party vibes, champagne toast, sparkler cake cutting, and high-energy music synchronization.",
-    tags: ["Birthday Reel", "Sparklers", "Party Highlights"]
+    tags: ["Shot on iPhone", "Birthday Reel", "Party Highlights"]
   }
 ];

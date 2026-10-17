@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, Sparkles, Sliders, Users, Layers, Award } from 'lucide-react';
+import { Smartphone, Sparkles, Sliders, Users, Layers, Award } from 'lucide-react';
 import './About.css';
 
 export const About = () => {
@@ -12,18 +12,18 @@ export const About = () => {
             <div className="about-main-img-wrap">
               <img 
                 src="/assets/images/hero_camera.jpg" 
-                alt="Adhiishoot Production Setup" 
+                alt="Adhiishoot iPhone Rig Setup" 
                 className="about-main-img"
               />
             </div>
 
             <div className="about-badge-card">
               <div className="about-badge-icon">
-                <Camera size={22} />
+                <Smartphone size={22} />
               </div>
               <div>
-                <div className="about-badge-title">Cinematic Video Production</div>
-                <div className="about-badge-sub">4K 60FPS • S-LOG3 • COLOR SUITE</div>
+                <div className="about-badge-title">Shot on iPhone Cinematography</div>
+                <div className="about-badge-sub">4K 60FPS PRORES • ACTION MODE • COLOR SUITE</div>
               </div>
             </div>
           </div>
@@ -41,18 +41,18 @@ export const About = () => {
             </h2>
 
             <p className="about-text">
-              At Adhiishoot, we turn real-life moments into memorable visual stories. From special celebrations and delivery moments to creative reels and business promotions, our team focuses on capturing the moment and delivering videos that stand out.
+              At Adhiishoot, we turn real-life moments into memorable visual stories. From special celebrations and delivery moments to creative reels and business promotions, our team shoots exclusively on flagship iPhones with high-end mobile rigs for agile, stunning results.
             </p>
 
             {/* Core Pillars */}
             <div className="about-pillars">
               <div className="pillar-card">
                 <div className="pillar-header">
-                  <Camera size={18} className="pillar-icon" />
-                  <span className="pillar-title">Shooting & Direction</span>
+                  <Smartphone size={18} className="pillar-icon" />
+                  <span className="pillar-title">Shot on iPhone & Direction</span>
                 </div>
                 <p className="pillar-desc">
-                  Creative angles, 3-axis gimbal stabilization, and expert direction to capture natural emotion.
+                  ProRes 4K capture, mobile gimbal stabilization, and expert direction to capture raw, natural emotion.
                 </p>
               </div>
 

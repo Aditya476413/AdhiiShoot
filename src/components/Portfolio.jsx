@@ -20,7 +20,7 @@ export const Portfolio = ({ onBookService }) => {
             Our Portfolio & <span className="text-red">Recent Works</span>
           </h2>
           <p className="section-desc">
-            Explore a selection of our car deliveries, weddings, AI edits, and commercial shoots captured with cinematic gear.
+            Explore a selection of our car deliveries, weddings, AI edits, and commercial shoots — Shot on iPhone with cinematic mobile rigs.
           </p>
         </div>
 

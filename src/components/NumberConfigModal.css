@@ -43,3 +43,19 @@
   justify-content: flex-end;
   gap: 12px;
 }
+
+@media (max-width: 480px) {
+  .config-modal-box {
+    padding: 24px 18px;
+  }
+  .config-modal-title {
+    font-size: 1.15rem;
+  }
+  .config-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .config-actions .btn {
+    width: 100%;
+  }
+}

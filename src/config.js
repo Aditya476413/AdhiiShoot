@@ -3,7 +3,7 @@ export const BRAND_CONFIG = {
   brandName: "Adhiishoot",
   logoUrl: "/assets/images/logo.png",
   tagline: "Your Moments. Our Creativity.",
-  subTagline: "Professional video shooting, editing, and creative reel services.",
+  subTagline: "Shot on iPhone. Professional video shooting, creative reel production, and cinematic editing.",
   
   // WhatsApp Destination Configuration
   // Default WhatsApp phone number with country code (91 for India)
@@ -23,5 +23,5 @@ export const BRAND_CONFIG = {
   hours: "Mon – Sun: 9:00 AM – 9:00 PM IST",
   
   // Cinematic Badge
-  badgeText: "CINEMATIC 4K 60FPS • COLOR GRADED"
+  badgeText: "SHOT ON iPHONE • 4K 60FPS PRORES"
 };

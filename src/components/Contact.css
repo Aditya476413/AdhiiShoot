@@ -98,5 +98,22 @@
 @media (max-width: 900px) {
   .contact-layout {
     grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-info-card {
+    padding: 24px 18px;
+    gap: 18px;
+  }
+  .contact-cta-card {
+    padding: 24px 18px;
+  }
+  .contact-cta-title {
+    font-size: 1.4rem;
+  }
+  .contact-item-value {
+    font-size: 0.96rem;
   }
 }

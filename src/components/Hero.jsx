@@ -44,24 +44,24 @@ export const Hero = ({ onExploreServices, onBookShoot }) => {
         <div className="hud-top">
           <div className="hud-rec-badge">
             <span className="rec-dot"></span>
-            <span className="hud-tag">REC</span>
+            <span className="hud-tag">SHOT ON iPHONE</span>
           </div>
           <div className="hud-timecode">{timecode}</div>
           <div className="hud-specs">
             <span>4K 60FPS</span>
-            <span>PRORES RAW</span>
+            <span>PRORES LOG</span>
           </div>
         </div>
 
         <div className="hud-bottom">
           <div className="hud-specs">
-            <span>ISO 800</span>
-            <span>SHUTTER 1/120</span>
-            <span>5600K</span>
+            <span>CINEMATIC MODE</span>
+            <span>4K HDR</span>
+            <span>ACTION MODE</span>
           </div>
           <div className="hud-specs">
             <span>BATTERY 94%</span>
-            <span>CINEMA RATIO 2.39:1</span>
+            <span>PRORES 422 HQ</span>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@ export const Hero = ({ onExploreServices, onBookShoot }) => {
       <div className="container hero-content">
         <div className="hero-pill">
           <Sparkles size={14} color="#E50914" />
-          <span>Professional Video Production & Creative Reel Studio</span>
+          <span>Shot on iPhone • Professional Creative Reel Studio</span>
         </div>
 
         <h1 className="hero-title">

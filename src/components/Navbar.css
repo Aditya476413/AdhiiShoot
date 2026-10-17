@@ -166,3 +166,17 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 480px) {
+  .nav-logo-img {
+    height: 32px;
+    max-height: 32px;
+  }
+  .nav-actions {
+    gap: 8px;
+  }
+  .nav-actions .btn-sm {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+  }
+}

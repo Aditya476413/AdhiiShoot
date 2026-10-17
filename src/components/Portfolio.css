@@ -5,8 +5,8 @@
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 24px;
 }
 
 .portfolio-card {
@@ -257,6 +257,36 @@
 @media (max-width: 768px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .portfolio-card {
+    aspect-ratio: 16 / 11;
+  }
+  .portfolio-play-btn {
+    opacity: 0.9;
+    width: 48px;
+    height: 48px;
+  }
+  .portfolio-overlay {
+    padding: 16px;
+  }
+  .portfolio-card-title {
+    font-size: 1.15rem;
+  }
+  .modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .modal-details {
+    padding: 20px 16px;
+  }
+  .modal-title {
+    font-size: 1.3rem;
+  }
+  .modal-header-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
   .modal-actions {
     flex-direction: column;
