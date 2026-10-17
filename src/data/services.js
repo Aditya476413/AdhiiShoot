@@ -140,7 +140,7 @@ export const SERVICES = [
     price: 999,
     formattedPrice: "₹999",
     description: "On-location shoot with professional creator direction followed by viral-paced editing, color grade, and sound effects.",
-    image: "/assets/images/shoot-and_reel_edit.jpg",
+    image: "/assets/images/shoot_and_reel_edit.jpg",
     badge: "Creator Choice",
     requiresEventDetails: true,
     features: [
