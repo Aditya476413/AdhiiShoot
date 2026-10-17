@@ -23,42 +23,55 @@ export const PortfolioModal = ({ item, onClose, onBookSimilar }) => {
           <X size={20} />
         </button>
 
-        {/* Video Viewport / Simulated Player */}
+        {/* Video Viewport / Player */}
         <div className="modal-video-viewport">
-          <img 
-            src={item.thumbnail} 
-            alt={item.title} 
-            className="modal-video-img"
-          />
+          {item.videoUrl ? (
+            <video
+              src={item.videoUrl}
+              poster={item.thumbnail}
+              controls
+              autoPlay
+              playsInline
+              className="modal-video-element"
+            />
+          ) : (
+            <>
+              <img 
+                src={item.thumbnail} 
+                alt={item.title} 
+                className="modal-video-img"
+              />
 
-          {/* Player HUD */}
-          <div className="simulated-player-bar">
-            <div className="player-controls">
-              <button 
-                type="button" 
-                className="player-play-btn"
-                onClick={() => setIsPlaying(!isPlaying)}
-              >
-                {isPlaying ? <Pause size={18} /> : <Play size={18} />}
-              </button>
-              <div className="player-time">
-                <span>{isPlaying ? "00:14" : "00:00"} / {item.duration}</span>
+              {/* Player HUD */}
+              <div className="simulated-player-bar">
+                <div className="player-controls">
+                  <button 
+                    type="button" 
+                    className="player-play-btn"
+                    onClick={() => setIsPlaying(!isPlaying)}
+                  >
+                    {isPlaying ? <Pause size={18} /> : <Play size={18} />}
+                  </button>
+                  <div className="player-time">
+                    <span>{isPlaying ? "00:14" : "00:00"} / {item.duration}</span>
+                  </div>
+                </div>
+
+                <div className="player-controls">
+                  <span className="hud-mono" style={{ fontSize: '0.72rem' }}>
+                    4K HDR • {item.aspectRatio}
+                  </span>
+                  <button 
+                    type="button" 
+                    style={{ background: 'transparent', border: 'none', color: '#fff', cursor: 'pointer' }}
+                    onClick={() => setIsMuted(!isMuted)}
+                  >
+                    {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
+                  </button>
+                </div>
               </div>
-            </div>
-
-            <div className="player-controls">
-              <span className="hud-mono" style={{ fontSize: '0.72rem' }}>
-                4K HDR • {item.aspectRatio}
-              </span>
-              <button 
-                type="button" 
-                style={{ background: 'transparent', border: 'none', color: '#fff', cursor: 'pointer' }}
-                onClick={() => setIsMuted(!isMuted)}
-              >
-                {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
-              </button>
-            </div>
-          </div>
+            </>
+          )}
         </div>
 
         {/* Details & Specs */}

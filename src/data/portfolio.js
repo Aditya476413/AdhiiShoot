@@ -65,6 +65,7 @@ export const PORTFOLIO_ITEMS = [
     category: "Events and Celebrations",
     serviceId: "birthday-video-reel",
     thumbnail: "/assets/images/birthday.jpg",
+    videoUrl: "/assets/images/birthday_video.mp4",
     duration: "00:40",
     aspectRatio: "9:16 Vertical Reel",
     gear: "Shot on iPhone 15 Pro Max • 4K 60FPS • Mobile RGB LED",

@@ -167,12 +167,25 @@
   aspect-ratio: 16 / 9;
   background: #000;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-video-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.modal-video-element {
+  width: 100%;
+  height: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  background: #000;
+  display: block;
+  outline: none;
 }
 
 .simulated-player-bar {
