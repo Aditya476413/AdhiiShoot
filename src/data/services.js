@@ -176,7 +176,7 @@ export const SERVICES = [
     price: 699,
     formattedPrice: "₹699",
     description: "Next-gen AI enhanced reels featuring smart dynamic captions, viral auto-zooms, AI voice accents, sound enhancements, and visual effects.",
-    image: "/assets/images/shoot_and_reel_edit.jpg",
+    image: "/assets/images/ai_reel_edit.jpg",
     badge: "AI Powered 🔥",
     requiresEventDetails: false,
     features: [
@@ -194,7 +194,7 @@ export const SERVICES = [
     price: 399,
     formattedPrice: "₹399",
     description: "Professional edit of your existing store or product footage highlighting interior ambiance, customer experience, and offers.",
-    image: "/assets/images/shop_shoot.jpg",
+    image: "/assets/images/shop_edit.jpg",
     badge: "Retail Boost",
     requiresEventDetails: false,
     features: [
