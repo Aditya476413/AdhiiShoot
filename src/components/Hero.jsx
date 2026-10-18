@@ -107,7 +107,7 @@ export const Hero = ({ onExploreServices, onBookShoot }) => {
         <div className="hero-metrics">
           <div className="metric-item">
             <div className="metric-number">
-              ₹399 <span>Starting</span>
+              ₹599 <span>Starting</span>
             </div>
             <div className="metric-label">100% Transparent Pricing</div>
           </div>
