@@ -4,7 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Services } from './components/Services';
 import { BookingForm } from './components/BookingForm';
-import { Portfolio } from './components/Portfolio';
+import ReelsCarousel from './components/ReelsCarousel';
 import { About } from './components/About';
 import { SocialSection } from './components/SocialSection';
 import { Contact } from './components/Contact';
@@ -87,8 +87,8 @@ export function App() {
           isHighlighted={isFormHighlighted}
         />
 
-        {/* Portfolio & Previous Works */}
-        <Portfolio 
+        {/* Portfolio / Reels Carousel */}
+        <ReelsCarousel 
           onBookService={handleSelectService}
         />
 
