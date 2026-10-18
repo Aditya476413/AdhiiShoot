@@ -72,7 +72,7 @@ export default function ReelsCarousel({ onBookService }) {
       >
         {reels.map((reel) => (
           <SwiperSlide key={reel.id}>
-            <div 
+            <div
               className="reel-card"
               onClick={() => setActiveItem(reel.rawItem)}
             >
@@ -100,36 +100,36 @@ export default function ReelsCarousel({ onBookService }) {
           <MessageCircle size={18} className="dm-icon" />
           <span>DM For More Details <strong>Adhiishoot</strong> on</span>
           <div className="dm-social-links">
-            <a 
-              href={BRAND_CONFIG.socialLinks.instagram} 
-              target="_blank" 
+            <a
+              href={BRAND_CONFIG.socialLinks.instagram}
+              target="_blank"
               rel="noopener noreferrer"
               className="dm-link"
             >
               Instagram
             </a>
             <span className="dm-dot">•</span>
-            <a 
-              href={BRAND_CONFIG.socialLinks.facebook} 
-              target="_blank" 
+            <a
+              href={BRAND_CONFIG.socialLinks.facebook}
+              target="_blank"
               rel="noopener noreferrer"
               className="dm-link"
             >
               Facebook
             </a>
             <span className="dm-dot">•</span>
-            <a 
-              href={BRAND_CONFIG.socialLinks.youtube} 
-              target="_blank" 
+            <a
+              href={BRAND_CONFIG.socialLinks.youtube}
+              target="_blank"
               rel="noopener noreferrer"
               className="dm-link"
             >
               YouTube
             </a>
             <span className="dm-dot">•</span>
-            <a 
+            <a
               href={`https://wa.me/${BRAND_CONFIG.whatsappNumber}?text=${encodeURIComponent("Hi Adhiishoot! I would like to inquire about your video shoot packages.")}`}
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
               className="dm-link dm-link-wa"
             >
@@ -141,9 +141,9 @@ export default function ReelsCarousel({ onBookService }) {
 
       {/* Video / Reel Player Modal */}
       {activeItem && (
-        <PortfolioModal 
-          item={activeItem} 
-          onClose={() => setActiveItem(null)} 
+        <PortfolioModal
+          item={activeItem}
+          onClose={() => setActiveItem(null)}
           onBookSimilar={(serviceId) => {
             setActiveItem(null);
             if (onBookService) onBookService(serviceId);
