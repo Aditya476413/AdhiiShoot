@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { PORTFOLIO_ITEMS } from "../data/portfolio";
+import { BRAND_CONFIG } from "../config";
 import { PortfolioModal } from "./PortfolioModal";
-import { Play } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 import "swiper/css";
 import "./ReelsCarousel.css";
@@ -16,7 +17,7 @@ export default function ReelsCarousel({ onBookService }) {
     id: `${item.id}-${index}`,
     image: item.thumbnail,
     title: item.title,
-    duration: item.duration,
+    price: item.price,
     category: item.category,
     videoUrl: item.videoUrl,
     rawItem: item
@@ -25,12 +26,12 @@ export default function ReelsCarousel({ onBookService }) {
   return (
     <section id="portfolio" className="reels-section">
       <div className="reels-header">
-        <span className="reels-eyebrow">Featured Showcase</span>
+        <span className="reels-eyebrow">ADHII⚡HOOT PRICE'S</span>
         <h2 className="reels-title">
-          Our Portfolio & <span className="text-red">Reels</span>
+          Our Portfolio & <span className="text-red">Transparent Pricing</span>
         </h2>
         <p className="reels-subtitle">
-          Shot on iPhone with cinematic mobile rigs. Tap any reel to watch.
+          Shot on iPhone with cinematic mobile rigs. Fixed transparent package prices.
         </p>
       </div>
 
@@ -88,19 +89,55 @@ export default function ReelsCarousel({ onBookService }) {
               ) : (
                 <img src={reel.image} alt={reel.title} loading="lazy" />
               )}
-
-              <div className="reel-top-badge">
-                <span className="reel-time">{reel.duration}</span>
-              </div>
-
-              <div className="reel-overlay">
-                <span className="reel-cat">{reel.category}</span>
-                <h3>{reel.title}</h3>
-              </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* DM for More Details banner */}
+      <div className="reels-dm-banner">
+        <div className="dm-banner-content">
+          <MessageCircle size={18} className="dm-icon" />
+          <span>DM For More Details <strong>Adhiishoot</strong> on</span>
+          <div className="dm-social-links">
+            <a 
+              href={BRAND_CONFIG.socialLinks.instagram} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="dm-link"
+            >
+              Instagram
+            </a>
+            <span className="dm-dot">•</span>
+            <a 
+              href={BRAND_CONFIG.socialLinks.facebook} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="dm-link"
+            >
+              Facebook
+            </a>
+            <span className="dm-dot">•</span>
+            <a 
+              href={BRAND_CONFIG.socialLinks.youtube} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="dm-link"
+            >
+              YouTube
+            </a>
+            <span className="dm-dot">•</span>
+            <a 
+              href={`https://wa.me/${BRAND_CONFIG.whatsappNumber}?text=${encodeURIComponent("Hi Adhiishoot! I would like to inquire about your video shoot packages.")}`}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="dm-link dm-link-wa"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* Video / Reel Player Modal */}
       {activeItem && (

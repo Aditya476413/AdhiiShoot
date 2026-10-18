@@ -56,11 +56,11 @@ export const Footer = () => {
           <div>
             <h4 className="footer-col-title">Top Packages</h4>
             <ul className="footer-links">
-              <li className="footer-link-item"><a href="#services">Car Delivery Video (₹2,199)</a></li>
-              <li className="footer-link-item"><a href="#services">Wedding Videos (₹2,499)</a></li>
-              <li className="footer-link-item"><a href="#services">AI Reel Edit (₹699)</a></li>
-              <li className="footer-link-item"><a href="#services">Shoot & Reel Edit (₹999)</a></li>
-              <li className="footer-link-item"><a href="#services">Shop Shoot & Edit (₹999)</a></li>
+              <li className="footer-link-item"><a href="#services">Car Delivery Video (₹2,499)</a></li>
+              <li className="footer-link-item"><a href="#services">Wedding Video (₹2,999)</a></li>
+              <li className="footer-link-item"><a href="#services">AI Reel Edit (₹799)</a></li>
+              <li className="footer-link-item"><a href="#services">Shoot & Reel Edit (₹1,999)</a></li>
+              <li className="footer-link-item"><a href="#services">Shop Opening Video (₹2,299)</a></li>
             </ul>
           </div>
 
