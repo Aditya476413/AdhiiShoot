@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { PORTFOLIO_ITEMS } from "../data/portfolio";
 import { BRAND_CONFIG } from "../config";
-import { PortfolioModal } from "./PortfolioModal";
 import { MessageCircle } from "lucide-react";
 
 import "swiper/css";
 import "./ReelsCarousel.css";
 
-export default function ReelsCarousel({ onBookService }) {
-  const [activeItem, setActiveItem] = useState(null);
-
+export default function ReelsCarousel() {
   // Double items to ensure seamless infinite looping on all screen sizes
   const reels = [...PORTFOLIO_ITEMS, ...PORTFOLIO_ITEMS].map((item, index) => ({
     id: `${item.id}-${index}`,
@@ -19,8 +16,7 @@ export default function ReelsCarousel({ onBookService }) {
     title: item.title,
     price: item.price,
     category: item.category,
-    videoUrl: item.videoUrl,
-    rawItem: item
+    videoUrl: item.videoUrl
   }));
 
   return (
@@ -72,10 +68,7 @@ export default function ReelsCarousel({ onBookService }) {
       >
         {reels.map((reel) => (
           <SwiperSlide key={reel.id}>
-            <div
-              className="reel-card"
-              onClick={() => setActiveItem(reel.rawItem)}
-            >
+            <div className="reel-card">
               {reel.videoUrl ? (
                 <video
                   src={reel.videoUrl}
@@ -138,18 +131,6 @@ export default function ReelsCarousel({ onBookService }) {
           </div>
         </div>
       </div>
-
-      {/* Video / Reel Player Modal */}
-      {activeItem && (
-        <PortfolioModal
-          item={activeItem}
-          onClose={() => setActiveItem(null)}
-          onBookSimilar={(serviceId) => {
-            setActiveItem(null);
-            if (onBookService) onBookService(serviceId);
-          }}
-        />
-      )}
     </section>
   );
 }

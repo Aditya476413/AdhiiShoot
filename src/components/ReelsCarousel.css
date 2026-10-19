@@ -72,6 +72,11 @@
   width: 100%;
   padding: 30px 0 35px 0 !important;
   overflow: visible !important;
+  cursor: grab;
+}
+
+.reels-swiper:active {
+  cursor: grabbing;
 }
 
 .reels-swiper .swiper-wrapper {
@@ -95,9 +100,13 @@
   background: #111;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
-  cursor: pointer;
+  cursor: grab;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   user-select: none;
+}
+
+.reel-card:active {
+  cursor: grabbing;
 }
 
 .reel-card img,
@@ -107,6 +116,9 @@
   object-fit: cover;
   display: block;
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 /* Active centered slide emphasis */
